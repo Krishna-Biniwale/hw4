@@ -9,7 +9,7 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     // Binary Search Tree tests
-    /*BinarySearchTree<int,int> bt;
+    BinarySearchTree<int,int> bt;
     bt.insert(std::make_pair(5, 1));
     bt.insert(std::make_pair(2, 1));
     bt.insert(std::make_pair(6, 1));
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     for(BinarySearchTree<int,int>::iterator it = bt.begin(); it != bt.end(); ++it) {
         cout << it->first << " " << it->second << endl;
     }
-*/
+/*
     // AVL Tree Tests
     	AVLTree<int, std::string> b, c, d;
 	std::pair<int, std::string> item5(5, "five");
@@ -235,5 +235,5 @@ int main(int argc, char *argv[])
   c.print();
 	c.remove(15);
 	c.remove(14);
-  c.print();
+  c.print();*/
 }

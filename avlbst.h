@@ -528,7 +528,8 @@ void AVLTree<Key, Value>:: remove(const Key& key)
       }
     }
     parent = node->getParent();
-    temp->~Node();
+    delete temp;
+    //temp->~Node();
     //BinarySearchTree<Key, Value>::remove(key);
     /*if (parent != nullptr) {
       parent->updateBalance(diff);
