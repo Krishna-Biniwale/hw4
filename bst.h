@@ -382,7 +382,7 @@ void BinarySearchTree<Key, Value>::deleteNodes(Node<Key, Value>* n)
   if (n != nullptr) {
     deleteNodes(n->getLeft());
     deleteNodes(n->getRight());
-    delete n;
+    n->~Node();
   }
 }
 
@@ -602,7 +602,7 @@ void BinarySearchTree<Key, Value>::remove(const Key& key)
       
 
     }
-    delete temp;
+    temp->~Node();
 }
 
 
